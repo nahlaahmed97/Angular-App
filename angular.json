@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "angular-lab": {
@@ -117,8 +117,16 @@
               "devServerTarget": "angular-lab:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "angular-lab"
+    }
+  },
+  "defaultProject": "angular-lab",
+  "cli": {
+    "analytics": "afc7f883-956a-4abc-8151-384c1e12d37b"
+  }
 }
